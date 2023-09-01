@@ -88,6 +88,7 @@ fn c3_HSLtoRGB(hsl : vec3<f32>) -> vec3<f32>
 fn main(input : FragmentInput) -> FragmentOutput
 {
 	var output : FragmentOutput;
+
 	var front : vec4<f32> = textureSample(textureFront, samplerFront, input.fragUV);
 	var back : vec4<f32> = textureSample(textureBack, samplerBack, input.c3_getBackUV(input.fragPos, textureBack));
 	var res : vec3<f32> = mix(front.rgb, back.rgb, shaderParams.mixSlider * front.a);
