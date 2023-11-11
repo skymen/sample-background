@@ -3,7 +3,7 @@ module.exports = {
   addonType: "effect",
   id: "skymen_SampleBackground",
   name: "Sample Background",
-  version: "1.0.0.5",
+  version: "1.0.0.6",
   category: "blend",
   // "distortion",
   // "normal-mapping",
